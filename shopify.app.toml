@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "feedback-mate"
+client_id = "16db8f596f311b4b0cd0ea90be4b7a57"
+application_url = "https://richardson-recorder-torture-palestine.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://richardson-recorder-torture-palestine.trycloudflare.com/auth/callback",
+  "https://richardson-recorder-torture-palestine.trycloudflare.com/auth/shopify/callback",
+  "https://richardson-recorder-torture-palestine.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "cocaffcafine.myshopify.com"
